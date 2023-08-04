@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Kalam;
+  src: url(fonts/Kalam-Regular.ttf);
+}
+
+body {
+  font-family: Kalam, "Open Sans", Cambria;
+  margin: 0;
+  background-color: #BF9978;
+}
+.title{
+  display:flex;
+  justify-content: space-around;
+}
+ h1 {
+  color: #593719;
+  margin: 20px;
+  margin-left: 70px;
+ }
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+    color: #8C331F;
+    margin: 16px 0 6px;
+    border-color: #593719;
+  }
+
+.menu-item-form{
+  border: 1px solid #8C331F;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: #F27777;
+}
+  .menu-1{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2014__04__20140428-adana-kebab-22-2f4debebf43d462ba045e041a9e9add4.jpg);
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .menu-2{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(images/chicken-sh-1633071166.jpg);
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .menu-3{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(images/kofta-turkikofteturkish-meatball-foto-resep-utama.jpg);
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .menu-4{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(images/burgerdagingsapi.webp);
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .menu-5{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(images/burgerdagingayam.jpg);
+    background-position: top center;
+    background-size: cover;
+  }
+
+  form {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 2px 2px #F5EFE7;
+    border-color: #593719;
+
+  }
+
+  .field {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  input,
+  select {
+      padding: 6px;
+      border: 1px solid #F5EFE7;
+      border-radius: 10px;
+      font-family: Kalam, "Open Sans", Cambria;
+      background-color: #BF9978;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  button {
+      cursor: pointer;
+      background-color: #593719;
+      color: #F5EFE7;
+  }
+ 

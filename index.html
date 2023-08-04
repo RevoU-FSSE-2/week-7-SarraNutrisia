@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Harian Dapur Turki</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="icon" href="images/icondapurturki.jpeg"
+      type="Icon Dapur Turki"/>
+</head>
+<body>
+  <div style="display: flex;">
+   <main>
+    <div class="title">
+        <h1>Rekap Penjualan Harian</h1>
+    </div>
+    <section>
+      <form class="menu-item-form">
+        <div class="menu-1">
+          <div class="field">
+                <label>Menu:</label>
+              <input type="text" id="varian" value="Adana Kebab 120 gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="text" id="harga1" value="85000" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="jumlah1" />
+            </div>
+            <div class="field">
+              <label>Aksi</label>
+            <button type="button" onclick="pindahjumlah1()">Submit</button>
+          </div>
+        </div>
+        
+
+
+        <div class="menu-2">
+          <div class="field">
+                <label>Menu:</label>
+          <input type="text" id="varian" value="Kebab Shish Ayam 180 gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="text" id="harga2" value="75000" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="jumlah2" />
+            </div>
+            <div class="field">
+              <label>Aksi</label>
+            <button type="button" onclick="pindahjumlah2()">Submit</button>
+          </div>
+        </div>
+         
+
+        <div class="menu-3">
+          <div class="field">
+                <label>Menu:</label>
+          <input type="text" id="varian" value="Kofte Daging Sapi 120 gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="text" id="harga3" value="85000" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="jumlah3" />
+            </div>
+            <div class="field">
+              <label>Aksi</label>
+            <button type="button" onclick="pindahjumlah3()">Submit</button>
+          </div>
+        </div>
+
+        <div class="menu-4">
+          <div class="field">
+                <label>Menu:</label>
+          <input type="text" id="varian" value="Burger Daging Sapi 90gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="text" id="harga4" value="50000" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="jumlah4" />
+            </div>
+            <div class="field">
+              <label>Aksi</label>
+            <button type="button" onclick="pindahjumlah4()">Submit</button>
+          </div>
+        </div>
+
+        <div class="menu-5">
+          <div class="field">
+                <label>Menu:</label>
+          <input type="text" id="varian" value="Burger Ayam 90gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="text" id="harga5" value="40000" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="jumlah5" />
+            </div>
+            <div class="field">
+              <label>Aksi</label>
+            <button type="button" onclick="pindahjumlah5()">Submit</button>
+          </div>
+        </div>
+          </form>
+    </section>
+   </main>
+   <main>
+    <div class="title">
+        <h1>Pendapatan yang Diterima</h1>
+    
+    </div>
+    <section>
+      <form class="menu-item-form">
+        <div class="menu-1">
+          <div class="field">
+                <label>Menu:</label>
+          <input type="text" id="varian" value="Adana Kebab 120 gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="number" id="invoice-harga1" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="invoice-jumlah1" />
+            </div>
+            <div class="field">
+              <label>Total</label>
+              <input type="number" id="invoice-total1" />
+          </div>
+        </div>
+        
+
+
+        <div class="menu-2">
+          <div class="field">
+                <label>Menu:</label>
+          <input type="text" id="varian" value="Kebab Shish Ayam 180 gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="number" id="invoice-harga2" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="invoice-jumlah2" />
+            </div>
+            <div class="field">
+              <label>Total</label>
+              <input type="number" id="invoice-total2" />
+          </div>
+        </div>
+         
+
+        <div class="menu-3">
+          <div class="field">
+                <label>Menu:</label>
+          <input type="text" id="varian" value="Kofte Daging Sapi 120 gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="number" id="invoice-harga3" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="invoice-jumlah3" />
+            </div>
+            <div class="field">
+              <label>Total</label>
+              <input type="number" id="invoice-total3" />
+          </div>
+        </div>
+
+        <div class="menu-4">
+          <div class="field">
+                <label>Menu:</label>
+          <input type="text" id="varian" value="Burger Daging Sapi 90gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="number" id="invoice-harga4" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="invoice-jumlah4" />
+            </div>
+            <div class="field">
+              <label>Total</label>
+              <input type="number" id="invoice-total4" />
+          </div>
+        </div>
+
+        <div class="menu-5">
+          <div class="field">
+                <label>Menu:</label>
+          <input type="text" id="varian" value="Burger Ayam 90gr" />
+            </div>
+            <div class="field">
+              <label>Harga:</label>
+              <input type="number" id="invoice-harga5" />
+            </div>
+            <div class="field">
+              <label>Jumlah:</label>
+              <input type="number" id="invoice-jumlah5" />
+            </div>
+            <div class="field">
+              <label>Total</label>
+              <input type="number" id="invoice-total5" />
+          </div>
+          </div>
+
+          <div class="total-pembayaran">
+            <div class="field">
+                  <label>Total Pendapatan Harian</label>
+            <input type="number" id="invoice-pembayaran" />
+        </div>
+          </form>    
+    </section>
+   </main>
+   </div> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//   function pindahjumlah1 () {
+//     console.log("pesanan-1")
+//     var test1 = document.getElementById("jumlah1").value;
+//     document.getElementById("invoice-jumlah1").value = test1;
+
+//     console.log("hargamenu-1")
+//     var test2 = document.getElementById("harga1").value;
+//     document.getElementById("invoice-harga1").value = test2;
+
+//     var test = test1 * test2
+//     console.log(test)
+//     document.getElementById("invoice-total1").value = test;
+//     total();
+//   }
+
+  // function pindahjumlah2 () {
+  //   console.log("pesanan-2")
+  //   var test1 = document.getElementById("jumlah2").value;
+  //   document.getElementById("invoice-jumlah2").value = test1;
+
+  //   console.log("hargamenu-2")
+  //   var test2 = document.getElementById("harga2").value;
+  //   document.getElementById("invoice-harga2").value = test2;
+
+  //   var test = test1 * test2
+  //   console.log(test)
+  //   document.getElementById("invoice-total2").value = test;
+  //   total();
+  // }
+
+//   function pindahjumlah3 () {
+//     console.log("pesanan-3")
+//     var test1 = document.getElementById("jumlah3").value;
+//     document.getElementById("invoice-jumlah3").value = test1;
+
+//     console.log("hargamenu-3")
+//     var test2 = document.getElementById("harga3").value;
+//     document.getElementById("invoice-harga3").value = test2;
+
+//     var test = test1 * test2
+//     console.log(test)
+//     document.getElementById("invoice-total3").value = test;
+//     total();
+//   }
+
+//   function pindahjumlah4 () {
+//     console.log("pesanan-4")
+//     var test1 = document.getElementById("jumlah4").value;
+//     document.getElementById("invoice-jumlah4").value = test1;
+
+//     console.log("hargamenu-4")
+//     var test2 = document.getElementById("harga4").value;
+//     document.getElementById("invoice-harga4").value = test2;
+
+//     var test = test1 * test2
+//     console.log(test)
+//     document.getElementById("invoice-total4").value = test;
+//     total();
+//   }
+
+//   function pindahjumlah5 () {
+//     console.log("pesanan-5")
+//     var test1 = document.getElementById("jumlah5").value;
+//     document.getElementById("invoice-jumlah5").value = test1;
+
+//     console.log("hargamenu-5")
+//     var test2 = document.getElementById("harga5").value;
+//     document.getElementById("invoice-harga5").value = test2;
+
+//     var test = test1 * test2
+//     console.log(test)
+//     document.getElementById("invoice-total5").value = test;
+//     total();
+//   }
+
+// function total (){
+//   var total1 = parseInt(document.getElementById("invoice-total1").value);
+//   var total2 = parseInt(document.getElementById("invoice-total2").value);
+//   var total3 = parseInt(document.getElementById("invoice-total3").value);
+//   var total4 = parseInt(document.getElementById("invoice-total4").value);
+//   var total5 = parseInt(document.getElementById("invoice-total5").value);
+
+//   var totalInvoice = 0;
+
+//   if(!isNaN(total1)) {
+//     totalInvoice = totalInvoice + total1;
+//   } 
+//   if(!isNaN(total2)) {
+//     totalInvoice = totalInvoice + total2;
+//   } 
+//   if(!isNaN(total3)) {
+//     totalInvoice = totalInvoice + total3;
+//   } 
+//   if(!isNaN(total4)) {
+//     totalInvoice = totalInvoice + total4;
+//   } 
+//   if(!isNaN(total5)) {
+//     totalInvoice = totalInvoice + total5;
+//   } 
+  
+
+//   document.getElementById("invoice-pembayaran").value = totalInvoice
+
+// }
+</script>
